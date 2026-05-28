@@ -1,4 +1,4 @@
-import { server as wisp } from "@mercuryworkshop/wisp-js/server"
+import { server as wisp } from "./dist/wisp-server.mjs"
 import express from "express"
 import http from "http"
 
