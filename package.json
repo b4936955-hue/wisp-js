@@ -42,7 +42,8 @@
     "build:prod": "webpack --mode=production",
     "dev": "webpack --watch",
     "server_cli": "node ./src/bin/server_cli.mjs",
-    "prepack": "npm run build:prod"
+    "prepack": "npm run build:prod",
+    "start": "node server.js"
   },
   "bin": {
     "wisp-js-server": "src/bin/server_cli.mjs"
@@ -50,9 +51,11 @@
   "dependencies": {
     "bufferutil": "^4.1.0",
     "commander": "^14.0.3",
+    "express": "^4.19.2",
     "ipaddr.js": "^2.3.0",
     "ws": "^8.19.0"
   },
+  "type": "module",
   "devDependencies": {
     "@babel/core": "^7.29.0",
     "@babel/preset-env": "^7.29.0",
