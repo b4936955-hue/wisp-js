@@ -80,6 +80,11 @@ for (let config of webpack_configs) {
       library: {
         type: "module"
       }
+    },
+    externals: {
+      "ws": "ws",
+      "crypto": "crypto",
+      "ipaddr.js": "ipaddr.js"
     }
   }
 
