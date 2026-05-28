@@ -108,4 +108,4 @@ for (let config of webpack_configs) {
   new_configs.push(cjs_config);
 }
 
-module.exports = webpack_configs.concat(new_configs);;
+module.exports = webpack_configs.concat(new_configs);
